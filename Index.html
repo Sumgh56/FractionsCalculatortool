@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractions Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Fractions Calculator</h1>
+
+        <div class="input-group">
+            <input type="number" id="num1Numerator" placeholder="Numerator 1" aria-label="Numerator of first fraction">
+            <span>/</span>
+            <input type="number" id="num1Denominator" placeholder="Denominator 1" aria-label="Denominator of first fraction">
+        </div>
+
+        <div class="operators">
+            <button id="addBtn" aria-label="Add fractions">+</button>
+            <button id="subtractBtn" aria-label="Subtract fractions">-</button>
+            <button id="multiplyBtn" aria-label="Multiply fractions">*</button>
+            <button id="divideBtn" aria-label="Divide fractions">/</button>
+        </div>
+
+        <div class="input-group">
+            <input type="number" id="num2Numerator" placeholder="Numerator 2" aria-label="Numerator of second fraction">
+            <span>/</span>
+            <input type="number" id="num2Denominator" placeholder="Denominator 2" aria-label="Denominator of second fraction">
+        </div>
+
+        <button id="calculateBtn" class="calculate-button">Calculate</button>
+
+        <div class="result-container">
+            <h2>Result:</h2>
+            <p id="result" aria-live="polite"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
